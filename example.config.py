@@ -11,7 +11,7 @@ TOKEN = '1234567890:ABCDEFGHIJ-LMNOQRSTUVXYZ12345678903'
 #   t.me/RawDataBot  #
 ######################
 
-ADMIN = 756870298
+ADMIN = 123456789
 
 ######################
 # Cloud Storage Path #
