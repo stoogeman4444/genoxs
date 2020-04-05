@@ -16,7 +16,7 @@ If you want to create your own bot with my codes, just head to the [Deploy your 
 3. CD to the root path of the project.
 4. Create your own bot in BotFather
 5. Copy bot api and bot username of your bot
-6. Run ```python setup.py```.
+6. Edit ```exmaple.config.py``` and save as ```config.py```.
 7. Enter your bot's credentials
 8. Run you bot with ```python main.py```
 
