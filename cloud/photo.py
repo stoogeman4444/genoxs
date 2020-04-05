@@ -19,7 +19,7 @@ def cloud_photo():
         downloaded_file = bot.download_file(file_info.file_path)
 
         date = datetime.datetime.now()
-        filename = str(date).replace(":", "-") + "-image.mp4"
+        filename = str(date).replace(":", "-") + "-image.jpg"
         file = os.path.join(config.PATH, filename)
         with open(file, 'wb') as new_file:
             new_file.write(downloaded_file)
