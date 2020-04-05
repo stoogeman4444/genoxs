@@ -20,7 +20,7 @@ def cloud_photo():
 
         date = datetime.datetime.now()
         filename = str(date).replace(":", "-") + "-image.jpg"
-        file = os.path.join(config.PATH, filename)
+        file = os.path.join(config.PATH['photo'], filename)
         with open(file, 'wb') as new_file:
             new_file.write(downloaded_file)
         pass

@@ -14,13 +14,13 @@ def cloud_video():
 
         # bot.forward_message(config.ADMIN, message.chat.id, message.message_id)
 
-        fileID = message.file_id
+        fileID = message.video.file_id
         file_info = bot.get_file(fileID)
         downloaded_file = bot.download_file(file_info.file_path)
 
         date = datetime.datetime.now()
         filename = str(date).replace(":", "-") + "-video.mp4"
-        file = os.path.join(config.PATH, filename)
+        file = os.path.join(config.PATH['video'], filename)
         with open(file, 'wb') as new_file:
             new_file.write(downloaded_file)
         pass
