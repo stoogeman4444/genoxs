@@ -17,4 +17,13 @@ ADMIN = 123456789
 # Cloud Storage Path #
 ######################
 
-PATH = 'C:/Users/<USER>/Desktop/Cloud'
+PATH = {
+    'photo':
+        'E:/Photos',
+    'video':
+        'E:/Videos',
+    'audio':
+        'E:/Audios',
+    'document':
+        'E:/Documents'
+}
