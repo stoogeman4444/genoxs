@@ -8,6 +8,10 @@ import stagger
 bot = telebot.TeleBot(config.TOKEN)
 
 
+youtube = 'http(?:s?):\/\/(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)?‌​[\w\?‌​=]*)?'
+
+
+
 @bot.message_handler(content_types=['audio'])
 def cmd_cloud_audio(message):
     bot.reply_to(message, "<b>Audio Received</b>", parse_mode='HTML')
