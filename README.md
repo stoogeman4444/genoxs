@@ -5,12 +5,6 @@
   <h1 align="center">GenoXS V8</h1>
 </p>
 
-<p align="center">
-  <a href="https://app.netlify.com/sites/bsba/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/c8bd4cd3-39c0-4893-ad01-ba2b7e52f555/deploy-status">
-  </a>
-</p>
-
 **This bot was built with [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI) in [Python](https://www.python.org/). This bot works as package modular, so don't worry about adding your own customizations. It will not affect to the bot's working process. Just, don't forget to import core/bot and you're ready to go!
 If you want to create your own bot with my codes, just head to the [Deploy your own](#deploy-your-own) section.**
  
