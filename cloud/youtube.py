@@ -12,7 +12,7 @@ def cloud_youtube():
         bot.send_chat_action(message.chat.id, 'upload_video')
         yt = YouTube(message.text)
         yt.streams\
-            .filter(progressive=True, file_extension='mp4')\
+            .filter(adaptive=True, file_extension='mp4')\
             .order_by('resolution')\
             .desc()\
             .first()\
