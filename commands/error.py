@@ -6,13 +6,13 @@ except ImportError as err:
 
 
 def cmd_error():
-    @bot.message_handler(commands=['start'])
+    @bot.message_handler(func=lambda message: True, content_types=['text'])
     def function_error(message):
         bot.send_message(message.chat.id,
-                         f"<b>Welcome {message.from_user.first_name}</b>\n" +
-                         f"I'm <i>{bot.get_me().first_name}</i> and I serve as cloud server\n" +
-                         f"machine helper for my Genemator master!\n" + "\n" +
-                         f"<b>For further information or help, type</b> /help\n",
+                         f"<b>Dear {message.from_user.first_name}</b>.\n" +
+                         f"I could not understand what command you insert.\n" +
+                         f"Currently, I'm underdevelopment and occasion errors might occur!\n" + "\n" +
+                         f"<b>Please, for further information or help, type</b> /help\n",
                          parse_mode='HTML')
         pass
     pass
