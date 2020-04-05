@@ -1,6 +1,5 @@
 import os
 import config
-import datetime
 
 from core import bot
 
@@ -17,14 +16,13 @@ def cloud_document():
         file_info = bot.get_file(fileID)
         downloaded_file = bot.download_file(file_info.file_path)
 
-        date = datetime.datetime.now()
-        filename = str(date).replace(":", "-") + "-document"
+        filename = message.document.file_name
         file = os.path.join(config.PATH['document'], filename)
         with open(file, 'wb') as new_file:
             new_file.write(downloaded_file)
         pass
 
-        bot.reply_to(message, "<b>Status:</b>Document Saved\n<b>Name:</b>{0}\nLocation:{1}".format(filename, config.PATH),
+        bot.reply_to(message, "<b>Status: </b>Document Saved\n<b>Name: </b>{0}\n<b>Location: </b>{1}".format(filename, file),
                      parse_mode='HTML')
 
     pass

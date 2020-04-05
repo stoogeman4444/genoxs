@@ -25,5 +25,5 @@ def cloud_video():
             new_file.write(downloaded_file)
         pass
 
-        bot.reply_to(message, "<b>Status:</b>Video Saved\n<b>Name:</b>{0}\nLocation:{1}".format(filename, config.PATH), parse_mode='HTML')
+        bot.reply_to(message, "<b>Status: </b>Video Saved\n<b>Name: </b>{0}\n<b>Location: </b>{1}".format(filename, file), parse_mode='HTML')
     pass
