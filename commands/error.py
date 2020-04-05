@@ -5,13 +5,13 @@ except ImportError as err:
     exit(1)
 
 
-def cmd_start():
+def cmd_error():
     @bot.message_handler(commands=['start'])
-    def function_start(message):
+    def function_error(message):
         bot.send_message(message.chat.id,
-                         f"<b>Welcome {message.from_user.first_name}</b> ༼ つ ◕_◕ ༽つ\n" +
+                         f"<b>Welcome {message.from_user.first_name}</b>\n" +
                          f"I'm <i>{bot.get_me().first_name}</i> and I serve as cloud server\n" +
-                         f"assistant helper for my Genemator master!\n" + "\n" +
+                         f"machine helper for my Genemator master!\n" + "\n" +
                          f"<b>For further information or help, type</b> /help\n",
                          parse_mode='HTML')
         pass
