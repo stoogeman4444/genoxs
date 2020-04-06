@@ -1,8 +1,4 @@
-try:
-    from core import bot
-except ImportError as err:
-    print(f"Import failed, {err}")
-    exit(1)
+from core import bot
 
 
 def cmd_error():
