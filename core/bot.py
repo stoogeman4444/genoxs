@@ -11,7 +11,13 @@ bot = telebot.TeleBot(config.TOKEN)
 
 def launch():
     logger = telebot.logger
-    telebot.logger.setLevel(logging.DEBUG)
+    def logger_mode(mode):
+        if mode == 'MIN':
+            return logging.INFO
+        else:
+            return logging.DEBUG
+        pass
+    telebot.logger.setLevel(logger_mode(config.LOGGER))
 
     logging.basicConfig(format='[%(asctime)s] %(filename)s:%(lineno)d %(levelname)s - %(message)s',
                         level=logging.INFO,
