@@ -15,13 +15,13 @@ def cmd_restart():
                          parse_mode='HTML')
 
         sleep(1)
-        bot.send_message(message.chat.id, '1...')
+        bot.send_message(message.chat.id, '<b>3...</b>', parse_mode='HTML')
 
         sleep(1)
-        bot.send_message(message.chat.id, '2...')
+        bot.send_message(message.chat.id, '<b>2...</b>', parse_mode='HTML')
 
         sleep(1)
-        bot.send_message(message.chat.id, '3...')
+        bot.send_message(message.chat.id, '<b>1...</b>', parse_mode='HTML')
 
         os.execl(sys.executable, sys.executable, *sys.argv)
         pass
