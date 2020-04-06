@@ -1,12 +1,10 @@
-try:
-    from cloud import cloud
-    from commands import commands
-except ImportError as err:
-    print(f"Import failed, {err}")
-    exit(1)
+from cloud import cloud
+from commands import commands
+from services import services
 
 
 def loader():
     cloud()
+    services()
     commands()
     pass
