@@ -1,7 +1,6 @@
 from core import bot
 from telebot import util
 
-
 help_message = util.split_string(open("assets/templates/help.html", "rb").read(), 3000)
 
 
